@@ -13,6 +13,8 @@
 		6B4C40B51AC76901004EE872 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40B41AC76901004EE872 /* Images.xcassets */; };
 		6B4C40B81AC76901004EE872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40B61AC76901004EE872 /* LaunchScreen.xib */; };
 		6B4C40C41AC76901004EE872 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C40C31AC76901004EE872 /* tipsTests.swift */; };
+		6B4C40EB1ACC948F004EE872 /* Maven Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40D01ACC948F004EE872 /* Maven Pro Medium.otf */; };
+		6B4C40EC1ACC948F004EE872 /* Maven Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40D11ACC948F004EE872 /* Maven Pro Regular.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		6B4C40BD1AC76901004EE872 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4C40C21AC76901004EE872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B4C40C31AC76901004EE872 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
+		6B4C40D01ACC948F004EE872 /* Maven Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maven Pro Medium.otf"; path = "../../../Downloads/MavenPro/Maven Pro Medium.otf"; sourceTree = "<group>"; };
+		6B4C40D11ACC948F004EE872 /* Maven Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maven Pro Regular.otf"; path = "../../../Downloads/MavenPro/Maven Pro Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,8 @@
 		6B4C40AB1AC76901004EE872 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6B4C40D01ACC948F004EE872 /* Maven Pro Medium.otf */,
+				6B4C40D11ACC948F004EE872 /* Maven Pro Regular.otf */,
 				6B4C40AC1AC76901004EE872 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -195,6 +201,8 @@
 				6B4C40B31AC76901004EE872 /* Main.storyboard in Resources */,
 				6B4C40B81AC76901004EE872 /* LaunchScreen.xib in Resources */,
 				6B4C40B51AC76901004EE872 /* Images.xcassets in Resources */,
+				6B4C40EC1ACC948F004EE872 /* Maven Pro Regular.otf in Resources */,
+				6B4C40EB1ACC948F004EE872 /* Maven Pro Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +345,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -347,6 +356,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
