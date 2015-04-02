@@ -59,7 +59,9 @@ class ViewController: UIViewController {
         }
         
         var tipPercentages = [0.15, 0.2, 0.25]
-        var tipButtonLabel = tipPercentages[tipControl.selectedSegmentIndex] * 100
+        
+        let tipButtonLabel = Int(tipPercentages[tipControl.selectedSegmentIndex] * 100)
+        
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
         var billAmount = NSString(string: billString).doubleValue
