@@ -32,8 +32,9 @@
 	</array>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Maven Pro Regular.otf</string>
-		<string>Maven Pro Medium.otf</string>
+		<string>DIN LightAlternate.ttf</string>
+		<string>DIN MediumAlternate.ttf</string>
+		<string>DIN RegularAlternate.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
