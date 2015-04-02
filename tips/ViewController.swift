@@ -20,6 +20,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipButton: UIButton!
     
+    @IBOutlet weak var tipView: UIView!
+    
+    @IBOutlet weak var totalView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -28,6 +32,15 @@ class ViewController: UIViewController {
         totalLabel.text = "$0.00"
         
         tipControl.alpha = 0
+        
+        tipView.alpha = 0
+        totalView.alpha = 0
+        
+        billField.becomeFirstResponder()
+        
+        
+        
+        
     }
 
     
@@ -48,6 +61,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func onEditingChanged(sender: AnyObject) {
+        
+        UIView.animateWithDuration(0.24, animations: {
+            // This causes first view to fade in and second view to fade out
+            self.tipView.alpha = 1
+            self.totalView.alpha = 1
+            
+        })
         
         var billString = billField.text
         
