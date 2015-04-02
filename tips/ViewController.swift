@@ -24,12 +24,21 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalView: UIView!
     
+    @IBOutlet weak var billFieldLabel: UILabel!
+    
+    @IBOutlet weak var totalFieldLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        tipButton.titleLabel!.font = UIFont(name: "DIN", size: 16)
+        billFieldLabel.font = UIFont(name: "DIN", size: 14)
+        totalFieldLabel.font = UIFont(name: "DIN", size: 14)
+
         
         tipControl.alpha = 0
         
@@ -38,24 +47,32 @@ class ViewController: UIViewController {
         
         billField.becomeFirstResponder()
         
+    
+        self.tipView.frame = CGRect(x: 0, y: 200, width: 320, height: 150)
         
         
         
     }
 
+
     
     @IBAction func tipButtonToggle(sender: UIButton) {
         
-        if(tipControl.alpha == 1) {
+        
+        if tipControl.alpha == 1 {
+            
+            tipButton.selected = false
             tipControl.alpha = 0
-            println("Tip Control is hidden")
+
             
         } else {
             
+            tipButton.selected = true
             tipControl.alpha = 1
-            println("Tip Control is visible")
-            
+
         }
+        
+        
     }
 
     
@@ -63,10 +80,13 @@ class ViewController: UIViewController {
     @IBAction func onEditingChanged(sender: AnyObject) {
         
         UIView.animateWithDuration(0.24, animations: {
-            // This causes first view to fade in and second view to fade out
             self.tipView.alpha = 1
             self.totalView.alpha = 1
             
+            
+            self.tipView.frame = CGRect(x: 0, y: 150, width: 320, height: 150)
+            
+
         })
         
         var billString = billField.text
@@ -78,18 +98,19 @@ class ViewController: UIViewController {
             }
         }
         
+        
+
+        
         var tipPercentages = [0.15, 0.2, 0.25]
         
         let tipButtonLabel = Int(tipPercentages[tipControl.selectedSegmentIndex] * 100)
         
-        var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
+        let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        var billAmount = NSString(string: billString).doubleValue
+        let billAmount = NSString(string: billString).doubleValue
         
-      
-        
-        var tip = billAmount * tipPercentage
-        var total = billAmount + tip
+        let tip = billAmount * tipPercentage
+        let total = billAmount + tip
         
         billField.text = "$"+"\(billString)"
 

@@ -3,18 +3,13 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="DIN LightAlternate.ttf">
-            <string>DINLightAlternate</string>
-        </mutableArray>
-        <mutableArray key="DIN RegularAlternate.ttf">
-            <string>DINRegularAlternate</string>
-            <string>DINRegularAlternate</string>
-            <string>DINRegularAlternate</string>
-            <string>DINRegularAlternate</string>
-            <string>DINRegularAlternate</string>
+        <mutableArray key="DIN.ttf">
+            <string>DIN</string>
+            <string>DIN</string>
+            <string>DIN</string>
+            <string>DIN</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -30,13 +25,104 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="AMO-G1-LJJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdE-zX-r3O">
+                                        <rect key="frame" x="27" y="37" width="90" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="17" id="5Fd-tE-fjN"/>
+                                            <constraint firstAttribute="width" constant="90" id="alj-Uf-hlF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zu-m9-Pwi">
+                                        <rect key="frame" x="25" y="53" width="277" height="70"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="277" id="y9k-ee-zh6"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="DIN" family="DIN" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
+                                        <connections>
+                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="NZL-LF-o6H"/>
+                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="ltH-wa-Vsn"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.47648404681734474" green="0.88235294117647056" blue="0.46939507407527847" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="8zu-m9-Pwi" secondAttribute="bottom" constant="27" id="0BM-9q-kra"/>
+                                    <constraint firstItem="8zu-m9-Pwi" firstAttribute="top" secondItem="AMO-G1-LJJ" secondAttribute="top" constant="53" id="Htu-UL-Elc"/>
+                                    <constraint firstItem="8zu-m9-Pwi" firstAttribute="leading" secondItem="AMO-G1-LJJ" secondAttribute="leading" constant="25" id="MaJ-rm-oIV"/>
+                                    <constraint firstItem="YdE-zX-r3O" firstAttribute="leading" secondItem="AMO-G1-LJJ" secondAttribute="leading" constant="27" id="P9O-nT-vR7"/>
+                                    <constraint firstItem="YdE-zX-r3O" firstAttribute="top" secondItem="AMO-G1-LJJ" secondAttribute="top" constant="37" id="Pse-Wl-bdn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFl-63-hCb">
+                                <rect key="frame" x="0.0" y="300" width="320" height="152"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDF-rm-fnW">
+                                        <rect key="frame" x="30" y="24" width="64" height="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="Tph-IN-Bxb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="14"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.41000000000000003" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZO-ww-Es1">
+                                        <rect key="frame" x="30" y="43" width="260" height="47"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="1PK-5g-x5m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DIN" family="DIN" pointSize="40"/>
+                                        <color key="textColor" red="0.15859984953465131" green="0.42339409722222221" blue="0.23081774753372997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33742829644414274" green="0.80596985479797978" blue="0.30513264847162336" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="152" id="2bt-15-52T"/>
+                                    <constraint firstAttribute="bottom" secondItem="PZO-ww-Es1" secondAttribute="bottom" constant="62" id="AJJ-K7-e70"/>
+                                    <constraint firstItem="PZO-ww-Es1" firstAttribute="centerX" secondItem="FFl-63-hCb" secondAttribute="centerX" id="DWd-h3-XXX"/>
+                                    <constraint firstItem="uDF-rm-fnW" firstAttribute="leading" secondItem="PZO-ww-Es1" secondAttribute="leading" id="JEq-Fo-H3a"/>
+                                    <constraint firstItem="PZO-ww-Es1" firstAttribute="top" secondItem="uDF-rm-fnW" secondAttribute="bottom" constant="2" id="LBR-Uq-27H"/>
+                                    <constraint firstItem="uDF-rm-fnW" firstAttribute="top" secondItem="FFl-63-hCb" secondAttribute="top" constant="24" id="Yke-W3-cr1"/>
+                                    <constraint firstItem="PZO-ww-Es1" firstAttribute="leading" secondItem="FFl-63-hCb" secondAttribute="leading" constant="30" id="qFX-ZQ-h9J"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuO-Or-yk7">
                                 <rect key="frame" x="0.0" y="150" width="320" height="150"/>
                                 <subviews>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-OJ-Ykh">
-                                        <rect key="frame" x="84" y="20" width="224" height="29"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="$10.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKJ-vz-l11">
+                                        <rect key="frame" x="30" y="41" width="295" height="47"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="224" id="rWB-7O-Nw5"/>
+                                            <constraint firstAttribute="height" constant="47" id="0Ls-am-yMj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="DIN" family="DIN" pointSize="40"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-tV-1sc">
+                                        <rect key="frame" x="20" y="21" width="88" height="17"/>
+                                        <fontDescription key="fontDescription" name="DIN" family="DIN" pointSize="14"/>
+                                        <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="15% TIP" image="Tip Button BG">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" image="Tip Button Active"/>
+                                        <state key="highlighted" image="Tip Button Active"/>
+                                        <connections>
+                                            <action selector="tipButtonToggle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5UN-W6-Yz4"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-OJ-Ykh">
+                                        <rect key="frame" x="113" y="16" width="169" height="29"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="169" id="JJP-fX-IYI"/>
                                         </constraints>
                                         <segments>
                                             <segment title="15%"/>
@@ -48,106 +134,15 @@
                                             <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="f1A-A2-QAh"/>
                                         </connections>
                                     </segmentedControl>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKJ-vz-l11">
-                                        <rect key="frame" x="26" y="57" width="286" height="46.5"/>
-                                        <fontDescription key="fontDescription" name="DINRegularAlternate" family="DIN" pointSize="38"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-tV-1sc">
-                                        <rect key="frame" x="26" y="18" width="54" height="31"/>
-                                        <fontDescription key="fontDescription" name="DINRegularAlternate" family="DIN" pointSize="15"/>
-                                        <state key="normal" title="15% tip">
-                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="0.64000000000000001" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="tipButtonToggle:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5UN-W6-Yz4"/>
-                                        </connections>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.39985025591588375" green="0.83980429292929293" blue="0.38114308251010987" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="jKJ-vz-l11" firstAttribute="top" secondItem="aCC-tV-1sc" secondAttribute="bottom" constant="8" id="8E9-Ni-P3Q"/>
-                                    <constraint firstItem="W1L-OJ-Ykh" firstAttribute="top" secondItem="cuO-Or-yk7" secondAttribute="top" constant="20" id="JQs-Aq-kIf"/>
-                                    <constraint firstItem="jKJ-vz-l11" firstAttribute="centerX" secondItem="W1L-OJ-Ykh" secondAttribute="centerX" constant="-27" id="JY7-oE-Sch"/>
-                                    <constraint firstItem="jKJ-vz-l11" firstAttribute="leading" secondItem="aCC-tV-1sc" secondAttribute="leading" id="K92-rq-re7"/>
-                                    <constraint firstItem="W1L-OJ-Ykh" firstAttribute="leading" secondItem="aCC-tV-1sc" secondAttribute="trailing" constant="4" id="N1c-f9-FaU"/>
-                                    <constraint firstItem="aCC-tV-1sc" firstAttribute="leading" secondItem="cuO-Or-yk7" secondAttribute="leading" constant="26" id="iV4-eK-DFv"/>
-                                    <constraint firstAttribute="trailing" secondItem="W1L-OJ-Ykh" secondAttribute="trailing" constant="12" id="lg0-fH-fgS"/>
-                                    <constraint firstItem="jKJ-vz-l11" firstAttribute="top" secondItem="W1L-OJ-Ykh" secondAttribute="bottom" constant="9" id="saO-VW-OiX"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="top" translatesAutoresizingMaskIntoConstraints="NO" id="AMO-G1-LJJ">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8zu-m9-Pwi">
-                                        <rect key="frame" x="25" y="34" width="277" height="98"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="277" id="y9k-ee-zh6"/>
-                                        </constraints>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="DINLightAlternate" family="DIN" pointSize="40"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" keyboardAppearance="alert"/>
-                                        <connections>
-                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="NZL-LF-o6H"/>
-                                            <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingDidEnd" id="ltH-wa-Vsn"/>
-                                        </connections>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILL AMOUNT" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YdE-zX-r3O">
-                                        <rect key="frame" x="27" y="37" width="90" height="17"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="17" id="5Fd-tE-fjN"/>
-                                            <constraint firstAttribute="width" constant="90" id="alj-Uf-hlF"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="DINRegularAlternate" family="DIN" pointSize="14"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.40999999999999998" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.47648404681734474" green="0.88235294117647056" blue="0.46939507407527847" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="8zu-m9-Pwi" secondAttribute="bottom" constant="18" id="0BM-9q-kra"/>
-                                    <constraint firstItem="8zu-m9-Pwi" firstAttribute="top" secondItem="AMO-G1-LJJ" secondAttribute="top" constant="34" id="Htu-UL-Elc"/>
-                                    <constraint firstItem="8zu-m9-Pwi" firstAttribute="leading" secondItem="AMO-G1-LJJ" secondAttribute="leading" constant="25" id="MaJ-rm-oIV"/>
-                                    <constraint firstItem="YdE-zX-r3O" firstAttribute="leading" secondItem="AMO-G1-LJJ" secondAttribute="leading" constant="27" id="P9O-nT-vR7"/>
-                                    <constraint firstItem="YdE-zX-r3O" firstAttribute="top" secondItem="AMO-G1-LJJ" secondAttribute="top" constant="37" id="Pse-Wl-bdn"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tgB-sn-JkJ">
-                                <rect key="frame" x="0.0" y="431" width="320" height="147"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFl-63-hCb">
-                                <rect key="frame" x="0.0" y="300" width="320" height="152"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDF-rm-fnW">
-                                        <rect key="frame" x="30" y="24" width="42" height="17"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="42" id="Y66-Ec-8Jr"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="DINRegularAlternate" family="DIN" pointSize="14"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.41000000000000003" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$200" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZO-ww-Es1">
-                                        <rect key="frame" x="30" y="43" width="260" height="47"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="47" id="1PK-5g-x5m"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="DINRegularAlternate" family="DIN" pointSize="43"/>
-                                        <color key="textColor" red="0.15859984953465131" green="0.42339409722222221" blue="0.23081774753372997" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="0.33742829644414274" green="0.80596985479797978" blue="0.30513264847162336" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="2bt-15-52T"/>
-                                    <constraint firstAttribute="bottom" secondItem="PZO-ww-Es1" secondAttribute="bottom" constant="62" id="AJJ-K7-e70"/>
-                                    <constraint firstItem="PZO-ww-Es1" firstAttribute="centerX" secondItem="FFl-63-hCb" secondAttribute="centerX" id="DWd-h3-XXX"/>
-                                    <constraint firstItem="PZO-ww-Es1" firstAttribute="top" secondItem="uDF-rm-fnW" secondAttribute="bottom" constant="2" id="d4W-c8-mWp"/>
-                                    <constraint firstItem="uDF-rm-fnW" firstAttribute="leading" secondItem="PZO-ww-Es1" secondAttribute="leading" id="nux-OU-hJT"/>
-                                    <constraint firstItem="PZO-ww-Es1" firstAttribute="leading" secondItem="FFl-63-hCb" secondAttribute="leading" constant="30" id="qFX-ZQ-h9J"/>
+                                    <constraint firstItem="W1L-OJ-Ykh" firstAttribute="top" secondItem="cuO-Or-yk7" secondAttribute="top" constant="16" id="8yP-jX-qKd"/>
+                                    <constraint firstAttribute="trailing" secondItem="W1L-OJ-Ykh" secondAttribute="trailing" constant="38" id="KZ4-Aj-tba"/>
+                                    <constraint firstItem="aCC-tV-1sc" firstAttribute="leading" secondItem="cuO-Or-yk7" secondAttribute="leading" constant="20" id="UpD-6l-90p"/>
+                                    <constraint firstItem="jKJ-vz-l11" firstAttribute="top" secondItem="aCC-tV-1sc" secondAttribute="bottom" constant="3" id="hyI-r0-JmR"/>
+                                    <constraint firstItem="jKJ-vz-l11" firstAttribute="leading" secondItem="cuO-Or-yk7" secondAttribute="leading" constant="30" id="iQd-pF-YYz"/>
+                                    <constraint firstItem="W1L-OJ-Ykh" firstAttribute="leading" secondItem="aCC-tV-1sc" secondAttribute="trailing" constant="5" id="n1O-mA-TAq"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -159,14 +154,12 @@
                             <constraint firstItem="FFl-63-hCb" firstAttribute="top" secondItem="cuO-Or-yk7" secondAttribute="bottom" id="M9L-nR-yLg"/>
                             <constraint firstItem="AMO-G1-LJJ" firstAttribute="top" secondItem="t73-eW-8yc" secondAttribute="bottom" constant="-20" id="TJr-GW-QwN"/>
                             <constraint firstItem="FFl-63-hCb" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="300" id="VNs-eQ-HUD"/>
-                            <constraint firstItem="tgB-sn-JkJ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="367" id="XxF-yr-peU"/>
                             <constraint firstItem="AMO-G1-LJJ" firstAttribute="leading" secondItem="cuO-Or-yk7" secondAttribute="leading" id="cdM-pR-hMX"/>
                             <constraint firstItem="FFl-63-hCb" firstAttribute="trailing" secondItem="cuO-Or-yk7" secondAttribute="trailing" id="fEf-xR-3Ml"/>
                             <constraint firstItem="cuO-Or-yk7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="150" id="i7Q-JC-iUm"/>
                             <constraint firstItem="AMO-G1-LJJ" firstAttribute="trailing" secondItem="cuO-Or-yk7" secondAttribute="trailing" id="kIA-rE-BLs"/>
                             <constraint firstItem="cuO-Or-yk7" firstAttribute="top" secondItem="AMO-G1-LJJ" secondAttribute="bottom" id="oKk-jN-ekq"/>
                             <constraint firstAttribute="trailing" secondItem="AMO-G1-LJJ" secondAttribute="trailing" id="rQb-mf-1nu"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="tgB-sn-JkJ" secondAttribute="bottom" constant="-10" id="vMz-SD-4Sc"/>
                         </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="APn-SY-svR" appends="YES" id="Sfm-Wk-mtG"/>
@@ -174,10 +167,12 @@
                     </view>
                     <connections>
                         <outlet property="billField" destination="8zu-m9-Pwi" id="4ok-k5-s3P"/>
+                        <outlet property="billFieldLabel" destination="YdE-zX-r3O" id="sMN-8e-GEX"/>
                         <outlet property="tipButton" destination="aCC-tV-1sc" id="ns6-jT-BKY"/>
                         <outlet property="tipControl" destination="W1L-OJ-Ykh" id="5PK-Zm-89q"/>
                         <outlet property="tipLabel" destination="jKJ-vz-l11" id="sYL-UP-6Sx"/>
                         <outlet property="tipView" destination="cuO-Or-yk7" id="keG-xV-qMn"/>
+                        <outlet property="totalFieldLabel" destination="uDF-rm-fnW" id="u56-uI-iFT"/>
                         <outlet property="totalLabel" destination="PZO-ww-Es1" id="Emv-o0-Ars"/>
                         <outlet property="totalView" destination="FFl-63-hCb" id="uPi-kX-moh"/>
                     </connections>
@@ -191,24 +186,11 @@
             </objects>
             <point key="canvasLocation" x="219" y="785"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="7iT-tU-cvT">
-            <objects>
-                <viewController id="z8d-74-gAt" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4tB-sv-v3Q"/>
-                        <viewControllerLayoutGuide type="bottom" id="j0n-rU-H1P"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="hq6-3Z-bYr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xtU-6n-lTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
     </scenes>
+    <resources>
+        <image name="Tip Button Active" width="8" height="12"/>
+        <image name="Tip Button BG" width="13" height="8"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

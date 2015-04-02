@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B07752B1ACDE3B90023EB4C /* DIN Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0775281ACDE3290023EB4C /* DIN Light.ttf */; };
+		6B07752C1ACDE3B90023EB4C /* DIN Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B0775291ACDE3290023EB4C /* DIN Medium.ttf */; };
+		6B07752D1ACDE3B90023EB4C /* DIN.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B07752A1ACDE3290023EB4C /* DIN.ttf */; };
 		6B4C40AE1AC76901004EE872 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C40AD1AC76901004EE872 /* AppDelegate.swift */; };
 		6B4C40B01AC76901004EE872 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C40AF1AC76901004EE872 /* ViewController.swift */; };
 		6B4C40B31AC76901004EE872 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40B11AC76901004EE872 /* Main.storyboard */; };
 		6B4C40B51AC76901004EE872 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40B41AC76901004EE872 /* Images.xcassets */; };
 		6B4C40B81AC76901004EE872 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40B61AC76901004EE872 /* LaunchScreen.xib */; };
 		6B4C40C41AC76901004EE872 /* tipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B4C40C31AC76901004EE872 /* tipsTests.swift */; };
-		6B4C40EB1ACC948F004EE872 /* Maven Pro Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40D01ACC948F004EE872 /* Maven Pro Medium.otf */; };
-		6B4C40EC1ACC948F004EE872 /* Maven Pro Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40D11ACC948F004EE872 /* Maven Pro Regular.otf */; };
-		6B4C41021ACCBBDE004EE872 /* DIN LightAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C41011ACCB1C9004EE872 /* DIN LightAlternate.ttf */; };
-		6B4C41031ACCBBDE004EE872 /* DIN MediumAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C40FF1ACCB1BF004EE872 /* DIN MediumAlternate.ttf */; };
-		6B4C41041ACCBBDE004EE872 /* DIN RegularAlternate.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B4C41001ACCB1BF004EE872 /* DIN RegularAlternate.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B0775281ACDE3290023EB4C /* DIN Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DIN Light.ttf"; path = "../../../Downloads/Fonts (3)/DIN Light.ttf"; sourceTree = "<group>"; };
+		6B0775291ACDE3290023EB4C /* DIN Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DIN Medium.ttf"; path = "../../../Downloads/Fonts (3)/DIN Medium.ttf"; sourceTree = "<group>"; };
+		6B07752A1ACDE3290023EB4C /* DIN.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = DIN.ttf; path = "../../../Downloads/Fonts (3)/DIN.ttf"; sourceTree = "<group>"; };
 		6B4C40A81AC76901004EE872 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4C40AC1AC76901004EE872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B4C40AD1AC76901004EE872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,11 +42,6 @@
 		6B4C40BD1AC76901004EE872 /* tipsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tipsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B4C40C21AC76901004EE872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B4C40C31AC76901004EE872 /* tipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipsTests.swift; sourceTree = "<group>"; };
-		6B4C40D01ACC948F004EE872 /* Maven Pro Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maven Pro Medium.otf"; path = "../../../Downloads/MavenPro/Maven Pro Medium.otf"; sourceTree = "<group>"; };
-		6B4C40D11ACC948F004EE872 /* Maven Pro Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Maven Pro Regular.otf"; path = "../../../Downloads/MavenPro/Maven Pro Regular.otf"; sourceTree = "<group>"; };
-		6B4C40FF1ACCB1BF004EE872 /* DIN MediumAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DIN MediumAlternate.ttf"; path = "../../../Library/Fonts/DIN MediumAlternate.ttf"; sourceTree = "<group>"; };
-		6B4C41001ACCB1BF004EE872 /* DIN RegularAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DIN RegularAlternate.ttf"; path = "../../../Library/Fonts/DIN RegularAlternate.ttf"; sourceTree = "<group>"; };
-		6B4C41011ACCB1C9004EE872 /* DIN LightAlternate.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DIN LightAlternate.ttf"; path = "../../../Library/Fonts/DIN LightAlternate.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +96,9 @@
 		6B4C40AB1AC76901004EE872 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				6B4C41011ACCB1C9004EE872 /* DIN LightAlternate.ttf */,
-				6B4C40FF1ACCB1BF004EE872 /* DIN MediumAlternate.ttf */,
-				6B4C41001ACCB1BF004EE872 /* DIN RegularAlternate.ttf */,
-				6B4C40D01ACC948F004EE872 /* Maven Pro Medium.otf */,
-				6B4C40D11ACC948F004EE872 /* Maven Pro Regular.otf */,
+				6B07752A1ACDE3290023EB4C /* DIN.ttf */,
+				6B0775281ACDE3290023EB4C /* DIN Light.ttf */,
+				6B0775291ACDE3290023EB4C /* DIN Medium.ttf */,
 				6B4C40AC1AC76901004EE872 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -207,14 +201,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B4C41021ACCBBDE004EE872 /* DIN LightAlternate.ttf in Resources */,
-				6B4C41031ACCBBDE004EE872 /* DIN MediumAlternate.ttf in Resources */,
-				6B4C41041ACCBBDE004EE872 /* DIN RegularAlternate.ttf in Resources */,
+				6B07752B1ACDE3B90023EB4C /* DIN Light.ttf in Resources */,
+				6B07752C1ACDE3B90023EB4C /* DIN Medium.ttf in Resources */,
+				6B07752D1ACDE3B90023EB4C /* DIN.ttf in Resources */,
 				6B4C40B31AC76901004EE872 /* Main.storyboard in Resources */,
 				6B4C40B81AC76901004EE872 /* LaunchScreen.xib in Resources */,
 				6B4C40B51AC76901004EE872 /* Images.xcassets in Resources */,
-				6B4C40EC1ACC948F004EE872 /* Maven Pro Regular.otf in Resources */,
-				6B4C40EB1ACC948F004EE872 /* Maven Pro Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +419,7 @@
 				6B4C40C91AC76901004EE872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6B4C40CA1AC76901004EE872 /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -435,6 +428,7 @@
 				6B4C40CC1AC76901004EE872 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
