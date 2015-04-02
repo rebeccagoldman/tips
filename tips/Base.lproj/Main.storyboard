@@ -118,7 +118,7 @@
                     </view>
                     <connections>
                         <outlet property="billField" destination="8zu-m9-Pwi" id="4ok-k5-s3P"/>
-                        <outlet property="tipButton" destination="aCC-tV-1sc" id="j6D-QV-CMB"/>
+                        <outlet property="tipButton" destination="aCC-tV-1sc" id="ns6-jT-BKY"/>
                         <outlet property="tipControl" destination="W1L-OJ-Ykh" id="5PK-Zm-89q"/>
                         <outlet property="tipLabel" destination="jKJ-vz-l11" id="sYL-UP-6Sx"/>
                         <outlet property="totalLabel" destination="PZO-ww-Es1" id="Emv-o0-Ars"/>

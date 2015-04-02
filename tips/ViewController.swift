@@ -20,7 +20,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tipButton: UIButton!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,8 +41,6 @@ class ViewController: UIViewController {
             
             tipControl.alpha = 1
             println("Tip Control is visible")
-
-            
             
         }
     }
@@ -62,19 +59,20 @@ class ViewController: UIViewController {
         }
         
         var tipPercentages = [0.15, 0.2, 0.25]
+        var tipButtonLabel = tipPercentages[tipControl.selectedSegmentIndex] * 100
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
         var billAmount = NSString(string: billString).doubleValue
         
       
         
-        
         var tip = billAmount * tipPercentage
         var total = billAmount + tip
         
         billField.text = "$"+"\(billString)"
 
-        
+        tipButton.setTitle("\(tipButtonLabel)% " + "tip", forState: UIControlState.Normal)
+
         var numberOfPeople = 2
         
     
@@ -82,6 +80,7 @@ class ViewController: UIViewController {
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
 
+        
         
 
     }
