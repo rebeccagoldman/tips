@@ -13,3 +13,5 @@ Time spent: Approximately 10 hours
 		- Animate visibility of tip & total views
 		- Constant $ prefix before numbers inputted into the billField 
 		- Enable division of tip and total by # of people 
+
+<img src="tips.gif/"> 
