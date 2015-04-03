@@ -19,7 +19,7 @@ Time spent: Approximately 10 hours
 		- Animate visibility of tip & total views 
 		- Constant $ prefix before numbers inputted into the billField 
 		- Enable division of tip and total by # of people 
-		- Display keyboard on screen load & always (intentionally removed tap to dismiss for this design) 
+		- Display keyboard on screen load & always (removed tap to dismiss for this design) 
 
 
 <img src="http://i.imgur.com/ExHK68U.gif"> 
