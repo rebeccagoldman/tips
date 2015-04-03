@@ -1,5 +1,5 @@
 
-Description: A tip calculator for as many people as you'd like 
+Description: A tip calculator application 
 
 Time spent: Approximately 10 hours
 
