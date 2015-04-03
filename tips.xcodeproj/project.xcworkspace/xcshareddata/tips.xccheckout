@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>00F6D50B-E7D2-4819-85D0-4F6559545CCC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>tips</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>40895FC529B4CD0069494E76898C22CB23919CFB</key>
+		<string>github.com:rebeccagoldman/tipsy.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>tips.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>40895FC529B4CD0069494E76898C22CB23919CFB</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:rebeccagoldman/tipsy.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>40895FC529B4CD0069494E76898C22CB23919CFB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>40895FC529B4CD0069494E76898C22CB23919CFB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>tips</string>
+		</dict>
+	</array>
+</dict>
+</plist>
