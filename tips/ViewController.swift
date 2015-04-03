@@ -12,6 +12,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var billField: UITextField!
     
+    @IBOutlet weak var numberOfPeopleField: UITextField!
+    
     @IBOutlet weak var tipLabel: UILabel!
     
     @IBOutlet weak var totalLabel: UILabel!
@@ -28,106 +30,100 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var totalFieldLabel: UILabel!
     
+    
+// this block runs when the screen first loads 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
         
-        tipButton.titleLabel!.font = UIFont(name: "DIN", size: 16)
+        tipButton.titleLabel!.font = UIFont(name: "DIN", size: 14)
         billFieldLabel.font = UIFont(name: "DIN", size: 14)
         totalFieldLabel.font = UIFont(name: "DIN", size: 14)
-
+        numberOfPeopleField.font = UIFont(name: "DIN", size: 20)
+        
+        
         
         tipControl.alpha = 0
-        
         tipView.alpha = 0
         totalView.alpha = 0
         
         billField.becomeFirstResponder()
         
-    
-        self.tipView.frame = CGRect(x: 0, y: 200, width: 320, height: 150)
-        
-        
-        
     }
 
-
-    
+// toggle segmented control visibility & selected state of button
     @IBAction func tipButtonToggle(sender: UIButton) {
         
         
         if tipControl.alpha == 1 {
             
             tipButton.selected = false
-            tipControl.alpha = 0
-
+            tipControl.alpha = 0.01
             
         } else {
             
             tipButton.selected = true
             tipControl.alpha = 1
-
         }
-        
         
     }
 
     
+// Animate visibility of tip & total views
     
     @IBAction func onEditingChanged(sender: AnyObject) {
         
         UIView.animateWithDuration(0.24, animations: {
+           
             self.tipView.alpha = 1
             self.totalView.alpha = 1
-            
-            
-            self.tipView.frame = CGRect(x: 0, y: 150, width: 320, height: 150)
-            
 
         })
+        
         
         var billString = billField.text
         
         if(countElements(billString) > 0) {
             
-            if(billString.substringToIndex(advance(billString.startIndex, 1)) == "$") {
+            // text added to the field starts after $
+            if(billString.substringToIndex(advance(billString.startIndex, 1)) == "$")
+            {
                 billString = billString.substringFromIndex(advance(billString.startIndex,1))
+                
             }
+            
         }
         
         
-
         
-        var tipPercentages = [0.15, 0.2, 0.25]
+        let tipPercentages = [0.15, 0.2, 0.25]
         
+        // update button label based on selected tip percentage
         let tipButtonLabel = Int(tipPercentages[tipControl.selectedSegmentIndex] * 100)
+        
+        tipButton.setTitle("\(tipButtonLabel)% " + "TIP", forState: UIControlState.Normal)
         
         let tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
         let billAmount = NSString(string: billString).doubleValue
         
-        let tip = billAmount * tipPercentage
-        let total = billAmount + tip
+        let numberOfPeople = numberOfPeopleField.text.toInt()
+        
+        
+        let tip = (billAmount * tipPercentage) / Double(numberOfPeople ?? 1)
+        
+        let total = (billAmount + tip) / Double(numberOfPeople ?? 1)
         
         billField.text = "$"+"\(billString)"
-
-        tipButton.setTitle("\(tipButtonLabel)% " + "tip", forState: UIControlState.Normal)
-
-        var numberOfPeople = 2
-        
-    
-        
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-
         
-        
+  
 
     }
-    
     
     
     
@@ -140,9 +136,7 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 
 }
 
