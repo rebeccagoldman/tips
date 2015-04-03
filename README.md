@@ -21,4 +21,4 @@ Time spent: Approximately 10 hours
 		- Enable division of tip and total by # of people 
 		
 
-<img src="http://i.imgur.com/dR3sMZt.gif"> 
+<img src="http://i.imgur.com/ExHK68U.gif"> 
