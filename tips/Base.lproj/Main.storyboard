@@ -65,7 +65,7 @@
                                 <rect key="frame" x="0.0" y="150" width="320" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jKJ-vz-l11">
-                                        <rect key="frame" x="29" y="60" width="295" height="47"/>
+                                        <rect key="frame" x="29" y="55" width="295" height="47"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="0Ls-am-yMj"/>
                                         </constraints>
@@ -74,7 +74,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button autoresizesSubviews="NO" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCC-tV-1sc">
-                                        <rect key="frame" x="17" y="29" width="88" height="17"/>
+                                        <rect key="frame" x="17" y="24" width="88" height="17"/>
                                         <fontDescription key="fontDescription" name="DIN" family="DIN" pointSize="14"/>
                                         <inset key="imageEdgeInsets" minX="70" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="15% TIP" image="Tip Button BG">
@@ -87,7 +87,7 @@
                                         </connections>
                                     </button>
                                     <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-OJ-Ykh">
-                                        <rect key="frame" x="123" y="21" width="169" height="29"/>
+                                        <rect key="frame" x="123" y="16" width="169" height="29"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="169" id="JJP-fX-IYI"/>
                                         </constraints>
@@ -104,7 +104,7 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.39985025591588375" green="0.83980429292929293" blue="0.38114308251010987" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="W1L-OJ-Ykh" firstAttribute="top" secondItem="cuO-Or-yk7" secondAttribute="top" constant="21" id="8yP-jX-qKd"/>
+                                    <constraint firstItem="W1L-OJ-Ykh" firstAttribute="top" secondItem="cuO-Or-yk7" secondAttribute="top" constant="16" id="8yP-jX-qKd"/>
                                     <constraint firstAttribute="trailing" secondItem="W1L-OJ-Ykh" secondAttribute="trailing" constant="28" id="KZ4-Aj-tba"/>
                                     <constraint firstItem="aCC-tV-1sc" firstAttribute="leading" secondItem="cuO-Or-yk7" secondAttribute="leading" constant="17" id="UpD-6l-90p"/>
                                     <constraint firstItem="jKJ-vz-l11" firstAttribute="top" secondItem="aCC-tV-1sc" secondAttribute="bottom" constant="14" id="hyI-r0-JmR"/>
