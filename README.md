@@ -14,4 +14,4 @@ Time spent: Approximately 10 hours
 		- Constant $ prefix before numbers inputted into the billField 
 		- Enable division of tip and total by # of people 
 
-<img src="tips.gif/"> 
+<img src="http://i.imgur.com/PevO7hH.gif"> 
