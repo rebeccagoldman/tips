@@ -44,8 +44,6 @@ class ViewController: UIViewController {
         totalFieldLabel.font = UIFont(name: "DIN", size: 14)
         numberOfPeopleField.font = UIFont(name: "DIN", size: 40)
         
-        
-        
         tipControl.alpha = 0
         tipView.alpha = 0
         totalView.alpha = 0
@@ -98,7 +96,6 @@ class ViewController: UIViewController {
         }
         
         
-        
         let tipPercentages = [0.15, 0.2, 0.25]
         
         // update button label based on selected tip percentage
@@ -120,14 +117,14 @@ class ViewController: UIViewController {
         billField.text = "$"+"\(billString)"
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
-        
-  
 
     }
     
     
     
     @IBAction func onTap(sender: AnyObject) {
+        
+        // view.endEditing(true)
 
     }
     

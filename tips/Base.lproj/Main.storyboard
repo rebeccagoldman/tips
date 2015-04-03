@@ -151,7 +151,7 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Puq-tp-FUq">
-                                        <rect key="frame" x="239" y="52" width="74" height="47"/>
+                                        <rect key="frame" x="232" y="52" width="74" height="47"/>
                                         <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
@@ -174,8 +174,8 @@
                                     <constraint firstAttribute="trailing" secondItem="KWj-6X-GKp" secondAttribute="trailing" constant="128" id="ojL-oa-pHi"/>
                                     <constraint firstItem="Puq-tp-FUq" firstAttribute="baseline" secondItem="PZO-ww-Es1" secondAttribute="baseline" id="pDM-xC-M8W"/>
                                     <constraint firstItem="PZO-ww-Es1" firstAttribute="leading" secondItem="FFl-63-hCb" secondAttribute="leading" constant="29" id="qFX-ZQ-h9J"/>
-                                    <constraint firstItem="Puq-tp-FUq" firstAttribute="leading" secondItem="KWj-6X-GKp" secondAttribute="trailing" constant="47" id="qdY-DE-Y4f"/>
-                                    <constraint firstAttribute="trailing" secondItem="Puq-tp-FUq" secondAttribute="trailing" constant="7" id="srC-4Z-PyU"/>
+                                    <constraint firstItem="Puq-tp-FUq" firstAttribute="leading" secondItem="KWj-6X-GKp" secondAttribute="trailing" constant="40" id="qdY-DE-Y4f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Puq-tp-FUq" secondAttribute="trailing" constant="14" id="srC-4Z-PyU"/>
                                     <constraint firstItem="Puq-tp-FUq" firstAttribute="centerY" secondItem="FFl-63-hCb" secondAttribute="centerY" id="tdz-cG-io8"/>
                                 </constraints>
                             </view>
