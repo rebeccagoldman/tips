@@ -52,7 +52,7 @@
                                         </connections>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" red="0.47648404681734474" green="0.88235294117647056" blue="0.46939507407527847" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.47843137254901963" green="0.88235294117647056" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="8zu-m9-Pwi" secondAttribute="bottom" constant="24" id="0BM-9q-kra"/>
                                     <constraint firstItem="8zu-m9-Pwi" firstAttribute="top" secondItem="AMO-G1-LJJ" secondAttribute="top" constant="56" id="Htu-UL-Elc"/>
@@ -144,12 +144,16 @@
                                         <color key="textColor" red="0.15859984953465131" green="0.42339409722222221" blue="0.23081774753372997" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Puq-tp-FUq">
-                                        <rect key="frame" x="224" y="61" width="29" height="30"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider" translatesAutoresizingMaskIntoConstraints="NO" id="KWj-6X-GKp">
+                                        <rect key="frame" x="149" y="67" width="41" height="19"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="29" id="2nE-6D-eRv"/>
+                                            <constraint firstAttribute="width" constant="41" id="x7P-Dn-wrD"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Puq-tp-FUq">
+                                        <rect key="frame" x="234" y="52" width="62" height="47"/>
+                                        <color key="textColor" white="0.0" alpha="0.5" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                         <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                         <connections>
                                             <action selector="onEditingChanged:" destination="vXZ-lx-hvc" eventType="editingChanged" id="QWk-ob-oul"/>
@@ -163,8 +167,16 @@
                                     <constraint firstItem="PZO-ww-Es1" firstAttribute="centerX" secondItem="FFl-63-hCb" secondAttribute="centerX" id="DWd-h3-XXX"/>
                                     <constraint firstItem="uDF-rm-fnW" firstAttribute="leading" secondItem="PZO-ww-Es1" secondAttribute="leading" id="JEq-Fo-H3a"/>
                                     <constraint firstItem="PZO-ww-Es1" firstAttribute="top" secondItem="uDF-rm-fnW" secondAttribute="bottom" constant="11" id="LBR-Uq-27H"/>
+                                    <constraint firstItem="KWj-6X-GKp" firstAttribute="centerY" secondItem="Puq-tp-FUq" secondAttribute="centerY" constant="1" id="Mh1-RY-BoW"/>
                                     <constraint firstItem="uDF-rm-fnW" firstAttribute="top" secondItem="FFl-63-hCb" secondAttribute="top" constant="24" id="Yke-W3-cr1"/>
+                                    <constraint firstItem="Puq-tp-FUq" firstAttribute="top" secondItem="D5I-Nh-ayJ" secondAttribute="bottom" constant="11" id="aw5-fa-f7t"/>
+                                    <constraint firstItem="KWj-6X-GKp" firstAttribute="top" secondItem="FFl-63-hCb" secondAttribute="top" constant="67" id="mUr-DY-1hr"/>
+                                    <constraint firstAttribute="trailing" secondItem="KWj-6X-GKp" secondAttribute="trailing" constant="130" id="ojL-oa-pHi"/>
+                                    <constraint firstItem="Puq-tp-FUq" firstAttribute="baseline" secondItem="PZO-ww-Es1" secondAttribute="baseline" id="pDM-xC-M8W"/>
                                     <constraint firstItem="PZO-ww-Es1" firstAttribute="leading" secondItem="FFl-63-hCb" secondAttribute="leading" constant="30" id="qFX-ZQ-h9J"/>
+                                    <constraint firstItem="Puq-tp-FUq" firstAttribute="leading" secondItem="KWj-6X-GKp" secondAttribute="trailing" constant="44" id="qdY-DE-Y4f"/>
+                                    <constraint firstAttribute="trailing" secondItem="Puq-tp-FUq" secondAttribute="trailing" constant="24" id="srC-4Z-PyU"/>
+                                    <constraint firstItem="Puq-tp-FUq" firstAttribute="centerY" secondItem="FFl-63-hCb" secondAttribute="centerY" id="tdz-cG-io8"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -213,6 +225,7 @@
     <resources>
         <image name="Tip Button Active" width="8" height="13"/>
         <image name="Tip Button BG" width="12" height="8"/>
+        <image name="divider" width="24" height="20"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

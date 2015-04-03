@@ -42,7 +42,7 @@ class ViewController: UIViewController {
         tipButton.titleLabel!.font = UIFont(name: "DIN", size: 14)
         billFieldLabel.font = UIFont(name: "DIN", size: 14)
         totalFieldLabel.font = UIFont(name: "DIN", size: 14)
-        numberOfPeopleField.font = UIFont(name: "DIN", size: 20)
+        numberOfPeopleField.font = UIFont(name: "DIN", size: 40)
         
         
         
@@ -128,7 +128,6 @@ class ViewController: UIViewController {
     
     
     @IBAction func onTap(sender: AnyObject) {
-        view.endEditing(true)
 
     }
     
